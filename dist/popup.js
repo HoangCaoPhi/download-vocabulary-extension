@@ -1,0 +1,1 @@
+(()=>{"use strict";var e;null===(e=document.getElementById("download-btn"))||void 0===e||e.addEventListener("click",(()=>{chrome.tabs.query({active:!0,currentWindow:!0},(e=>{var t;(null===(t=e[0])||void 0===t?void 0:t.id)&&chrome.tabs.sendMessage(e[0].id,{action:"extract_audio"})}))}))})();

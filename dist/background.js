@@ -1,0 +1,1 @@
+(()=>{"use strict";chrome.runtime.onMessage.addListener(((o,n,a)=>{if("download_audio"===o.action){const n=o.url,a=`Vocabulary_Audio/${new URL(n).pathname.split("/").pop()}`;chrome.downloads.download({url:n,filename:a,conflictAction:"uniquify",saveAs:!1})}}))})();
